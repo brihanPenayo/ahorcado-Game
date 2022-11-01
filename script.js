@@ -3,7 +3,7 @@ const INPUT_TEXTO = document.getElementById('inputTexto');
 const TEXTO_ADIVINAR = document.getElementById('textOculto');
 const AHORCADO_IMG = document.getElementById('ahorcadoImagen');
 const GANASTE = document.getElementById('mensajeGanador');
-const textos = ['PERRO', 'GATO', 'NIÑOS', 'AGUA', 'CANILLA', 'COMPUTADORA', 'RUTA', 'REGLA', 'PROGRAMADOR', 'PROGRAMACION', 'ESTUDIOSO'];
+const textos = ['PERRO', 'GATO', 'NIÑOS', 'AGUA', 'CANILLA', 'COMPUTADORA', 'ARBOL', 'REGLA', 'PROGRAMADOR', 'PROGRAMACION', 'ESTUDIOSO'];
 let textoConvertido = '';
 let textosIndice = 0;
 let contador = 0;
@@ -27,7 +27,7 @@ INPUT_TEXTO.addEventListener('keyup', () => {
         cambiarMunheco(contador);
         if (contador === 6) {
             INPUT_TEXTO.disabled = true;
-            GANASTE.innerHTML = '¡PERDISTE!'
+            GANASTE.innerHTML = `¡PERDISTE!<br/> La palabra era ${palabra}`
         }
     }
     INPUT_TEXTO.value = '';
