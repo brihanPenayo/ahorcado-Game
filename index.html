@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Juego Ahorcado</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="./styles.css">
-        <script src="./script.js" defer></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;">
-    </head>
-    <body>
-        <div id="primer">
-        <div id="imagenAhorcado"><img src="https://www.toponimos.es/toponimos/img/ahorcado_0.png"></div>
+
+<head>
+    <title>Juego Ahorcado</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./res/img/icon.png">
+    <script src="./script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="contenedorPrincipal">
+        <div id="imagenAhorcado"><img id="ahorcadoImagen" src="./res/img/img-0.png"></div>
+        <div id="mensajeGanador"></div>
         <div id="contenedorTexto" class="contenedorTexto">
-            <span id="textOculto"></span>
+            <span id="textOculto" class="textoAnimado">EL_AHORCADO</span>
         </div>
-        <input id="inputTexto" type="text" maxlength="1" >
+        <input id="inputTexto" type="text" maxlength="1">
         <button id="btnIniciar" type="submit">INICIAR</button>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>
